@@ -1,3 +1,6 @@
 # CSE5914-SmileChild
 
-# Test testing 123
+# After cloning, run 
+# pip install rasa then
+# rasa train then
+# rasa shell
