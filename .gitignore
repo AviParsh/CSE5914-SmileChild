@@ -1,0 +1,6 @@
+#ignore models 
+ models/
+
+
+#ignore rasa
+ .rasa/
