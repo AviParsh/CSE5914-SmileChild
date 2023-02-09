@@ -107,4 +107,19 @@ nlu:
   - intent: body_aches_types
     examples: |
       - types
-      
+
+  - intent: body_aches_sciatica_definition
+    examples: |
+      - sciatica
+
+  - intent: body_aches_round_ligament_definition
+    examples: |
+      - round ligament
+
+  - intent: body_aches_carpal_tunnel_definition
+    examples: |
+      - carpal tunnel
+
+  - intent: body_aches_back_pain_definition
+    examples: |
+      - back pain

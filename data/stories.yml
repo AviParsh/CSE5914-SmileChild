@@ -44,3 +44,28 @@ stories:
       - checkpoint: check_body_aches_problems
       - intent: body_aches_types
       - action: utter_body_aches_types
+      - checkpoint: check_body_aches_types_problems
+
+  - story: body_ache_types_sciatica_path
+    steps:
+      - checkpoint: check_body_aches_types_problems
+      - intent: body_aches_sciatica_definition
+      - action: utter_body_aches_sciatica_definition
+
+  - story: body_ache_types_round_ligament_path
+    steps:
+      - checkpoint: check_body_aches_types_problems
+      - intent: body_aches_round_ligament_definition
+      - action: utter_body_aches_round_ligament_definition
+
+  - story: body_ache_types_carpal_tunnel_path
+    steps:
+      - checkpoint: check_body_aches_types_problems
+      - intent: body_aches_carpal_tunnel_definition
+      - action: utter_body_aches_carpal_tunnel_definition
+
+  - story: body_ache_types_back_pain_path
+    steps:
+      - checkpoint: check_body_aches_types_problems
+      - intent: body_aches_back_pain_definition
+      - action: utter_body_aches_back_pain_definition

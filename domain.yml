@@ -34,10 +34,22 @@ responses:
     - text: "Enthiran 3.0"
 
   utter_body_aches:
-    - text: "What do you want to learn about body aches? (Types, Influencing Factors, Care, other) "
+    - text: "What do you want to learn about body aches? (Types, Influencing Factors, Care, other)"
 
   utter_body_aches_types:
-    - text: "Which type of body aches do you want to know? "
+    - text: "Which type of body aches do you want to know? (Sciatica, Round Ligament, Carpal Tunnel, Back Pain)"
+
+  utter_body_aches_sciatica_definition:
+    - text: "Sciatica pain is pain that runs from the lower back down the back of the leg to the knee or foot."
+
+  utter_body_aches_round_ligament_definition:
+    - text: "Round ligament pain is usually felt in the lower belly and groin. "
+
+  utter_body_aches_carpal_tunnel_definition:
+    - text: "Carpal tunnel is a numbness, tingling, or pain felt in the wrist, hands, and/or fingers. "
+
+  utter_body_aches_back_pain_definition:
+    - text: "Back pain is usually found in the upper or lower back and hips."
 
 session_config:
   session_expiration_time: 60
