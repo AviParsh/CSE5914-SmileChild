@@ -38,6 +38,9 @@ responses:
 
   utter_body_aches_types:
     - text: "Which type of body aches do you want to know? "
+  
+  utter_body_aches_influencing_factors_sciatica:
+    - text: "Sciatica can be caused by the growing uterus, weight gain, swelling, and a shift of your center of gravity due to growing breasts and belly."
 
 session_config:
   session_expiration_time: 60

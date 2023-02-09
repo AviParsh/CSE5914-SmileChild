@@ -107,4 +107,13 @@ nlu:
   - intent: body_aches_types
     examples: |
       - types
+  - intent: body_aches_influence
+    examples: |
+      - influence
+      - influencing factors
+      - factors
+      - causes
+      
+      
+
       
