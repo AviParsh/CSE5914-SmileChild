@@ -37,3 +37,10 @@ stories:
     steps:
       - intent: body_aches
       - action: utter_body_aches
+      - checkpoint: check_body_aches_problems
+
+  - story: body_ache_types_path
+    steps:
+      - checkpoint: check_body_aches_problems
+      - intent: body_aches_types
+      - action: utter_body_aches_types

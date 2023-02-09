@@ -34,7 +34,10 @@ responses:
     - text: "Enthiran 3.0"
 
   utter_body_aches:
-    - text: "What do you want to learn about body aches? "
+    - text: "What do you want to learn about body aches? (Types, Influencing Factors, Care, other) "
+
+  utter_body_aches_types:
+    - text: "Which type of body aches do you want to know? "
 
 session_config:
   session_expiration_time: 60

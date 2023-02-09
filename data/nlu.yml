@@ -103,4 +103,8 @@ nlu:
       - i feel painful
       - i have a body ache
       - i want to learn about body aches
+
+  - intent: body_aches_types
+    examples: |
+      - types
       

@@ -16,7 +16,7 @@ rules:
       - intent: bot_name
       - action: utter_bot_name
 
-  - rule: Say 'I am a bot' anytime the user challenges
+  - rule: Ask questions about body_aches
     steps:
       - intent: body_aches
       - action: utter_body_aches
