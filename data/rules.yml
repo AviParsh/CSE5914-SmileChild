@@ -15,3 +15,8 @@ rules:
     steps:
       - intent: bot_name
       - action: utter_bot_name
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: body_aches
+      - action: utter_body_aches

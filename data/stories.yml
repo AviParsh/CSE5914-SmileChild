@@ -32,3 +32,8 @@ stories:
     steps:
       - intent: bot_name
       - action: utter_bot_name
+
+  - story: body_ache_path
+    steps:
+      - intent: body_aches
+      - action: utter_body_aches

@@ -95,3 +95,12 @@ nlu:
       - what is your name?
       - what are you called?
       - how can i address you?
+
+  - intent: body_aches
+    examples: |
+      - my back hurts
+      - i have headache for several days
+      - i feel painful
+      - i have a body ache
+      - i want to learn about body aches
+      
