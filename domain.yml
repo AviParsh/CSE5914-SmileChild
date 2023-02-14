@@ -9,6 +9,14 @@ intents:
   - mood_unhappy
   - bot_challenge
   - bot_name
+  - body_aches
+  - body_aches_types
+  - body_aches_sciatica_definition
+  - body_aches_influence
+  - body_aches_round_ligament_definition
+  - body_aches_carpal_tunnel_definition
+  - body_aches_back_pain_definition
+  - body_aches_sciatica_influence
 
 responses:
   utter_greet:
@@ -37,7 +45,10 @@ responses:
     - text: "What do you want to learn about body aches? (Types, Influencing Factors, Care, other)"
 
   utter_body_aches_types:
-    - text: "Which type of body aches do you want to know? "
+    - text: "Which type of body aches do you want to know?"
+
+  utter_body_aches_influence_types:
+    - text: "Which type of body aches do you want to know the causes of? (Sciatica, Round Ligament, Carpal Tunnel, Back Pain)"
   
   utter_body_aches_influencing_factors_sciatica:
     - text: "Sciatica can be caused by the growing uterus, weight gain, swelling, and a shift of your center of gravity due to growing breasts and belly."
@@ -53,6 +64,9 @@ responses:
 
   utter_body_aches_back_pain_definition:
     - text: "Back pain is usually found in the upper or lower back and hips."
+
+  utter_learn_next_steps:
+    - text: "What would you like to learn about body aches next? (Types, Influencing Factors, How to Care for them, or When to call a provider)"
 
 session_config:
   session_expiration_time: 60

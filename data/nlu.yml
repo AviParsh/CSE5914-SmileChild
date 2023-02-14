@@ -112,8 +112,15 @@ nlu:
       - influence
       - influencing factors
       - factors
-      - causes     
+      - causes
+      - why
 
+  
+
+  - intent: body_aches_sciatica_influence
+    examples: |
+      - sciatica
+      
   - intent: body_aches_sciatica_definition
     examples: |
       - sciatica

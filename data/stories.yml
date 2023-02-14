@@ -37,35 +37,56 @@ stories:
     steps:
       - intent: body_aches
       - action: utter_body_aches
-      - checkpoint: check_body_aches_problems
+      #- checkpoint: check_body_aches_problems
 
   - story: body_ache_types_path
     steps:
-      - checkpoint: check_body_aches_problems
+      #- checkpoint: check_body_aches_problems
       - intent: body_aches_types
       - action: utter_body_aches_types
-      - checkpoint: check_body_aches_types_problems
+      #- checkpoint: check_body_aches_types_problems
 
   - story: body_ache_types_sciatica_path
     steps:
-      - checkpoint: check_body_aches_types_problems
+      #- checkpoint: check_body_aches_types_problems
       - intent: body_aches_sciatica_definition
       - action: utter_body_aches_sciatica_definition
+      - action: utter_learn_next_steps
+
 
   - story: body_ache_types_round_ligament_path
     steps:
-      - checkpoint: check_body_aches_types_problems
+      #- checkpoint: check_body_aches_types_problems
       - intent: body_aches_round_ligament_definition
       - action: utter_body_aches_round_ligament_definition
+      - action: utter_learn_next_steps
 
   - story: body_ache_types_carpal_tunnel_path
     steps:
-      - checkpoint: check_body_aches_types_problems
+      #- checkpoint: check_body_aches_types_problems
       - intent: body_aches_carpal_tunnel_definition
       - action: utter_body_aches_carpal_tunnel_definition
+      - action: utter_learn_next_steps
 
-  - story: body_ache_types_back_pain_path
+  # - story: body_ache_types_back_pain_path
+  #   steps:
+  #     - checkpoint: check_body_aches_types_problems
+  #     - intent: body_aches_back_pain_definition
+  #     - action: utter_body_aches_back_pain_definition
+  #     - action: utter_learn_next_steps
+
+
+
+  #story for if someone selects influences
+  - story: body_ache_influence_path
     steps:
-      - checkpoint: check_body_aches_types_problems
-      - intent: body_aches_back_pain_definition
-      - action: utter_body_aches_back_pain_definition
+      #- checkpoint: check_body_aches_problems
+      - intent: body_aches_influence
+      - action: utter_body_aches_influence_types
+      #- checkpoint: check_body_aches_types_problems
+
+  #user wants to know influences of sciatica
+  - story: body_ache_influence_sciatia_path
+    steps:
+      - intent: body_aches_sciatica_influence
+      - action: utter_body_aches_influencing_factors_sciatica
