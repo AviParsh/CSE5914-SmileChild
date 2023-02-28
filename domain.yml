@@ -17,6 +17,7 @@ intents:
   - body_aches_carpal_tunnel_definition
   - body_aches_back_pain_definition
   - body_aches_sciatica_influence
+  - choose_body_ache_topic
 
 responses:
   utter_greet:
@@ -45,7 +46,7 @@ responses:
     - text: "What do you want to learn about body aches? (Types, Influencing Factors, Care, other)"
 
   utter_body_aches_types:
-    - text: "Which type of body aches do you want to know?"
+    - text: "The main types of body aches are Sciatica, Round Ligament, Carpal Tunnel, and Back Pain. Which type of body aches do you want to learn about?"
 
   utter_body_aches_influence_types:
     - text: "Which type of body aches do you want to know the causes of? (Sciatica, Round Ligament, Carpal Tunnel, Back Pain)"
