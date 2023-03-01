@@ -33,13 +33,22 @@ stories:
       - intent: bot_name
       - action: utter_bot_name
 
+  # - story: body_ache_types_path
+  #   steps:
+  #     - intent: body_aches
+  #     - action: utter_body_aches
+  #     - intent: choose_body_ache_topic
+  #       entities:
+  #         - topic: "types"
+  #     - action: utter_body_aches_types
+
   - story: body_ache_types_path
     steps:
       - intent: body_aches
       - action: utter_body_aches
       - intent: choose_body_ache_topic
-      - entities:
-        - topic: types
+      - slot_was_set:
+          - topic: "types"
       - action: utter_body_aches_types
 
   - story: body_ache_influencing_path
@@ -47,13 +56,9 @@ stories:
       - intent: body_aches
       - action: utter_body_aches
       - intent: choose_body_ache_topic
-      - entities:
-        - topic: influencing factors
+      - slot_was_set:
+          - topic: "influence"
       - action: utter_body_aches_influence_types
-
-
- 
-
 
   # - story: body_ache_types_path
   #   steps:
@@ -70,7 +75,6 @@ stories:
   #     - action: utter_learn_next_steps
   #     #- checkpoint: check_uttered_body_ache_definition
 
-
   # - story: body_ache_types_round_ligament_path
   #   steps:
   #     #- checkpoint: check_body_aches_types_problems
@@ -78,7 +82,6 @@ stories:
   #     - action: utter_body_aches_round_ligament_definition
   #     - action: utter_learn_next_steps
   #     #- checkpoint: check_gave_body_ache_definition
-
 
   # - story: body_ache_types_carpal_tunnel_path
   #   steps:
@@ -93,8 +96,6 @@ stories:
   # #     - intent: body_aches_back_pain_definition
   # #     - action: utter_body_aches_back_pain_definition
   # #     - action: utter_learn_next_steps
-
-
 
   # #story for if someone selects influences
   # - story: body_ache_influence_path

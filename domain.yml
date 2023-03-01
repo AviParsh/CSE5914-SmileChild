@@ -19,6 +19,17 @@ intents:
   - body_aches_sciatica_influence
   - choose_body_ache_topic
 
+entities:
+  - topic
+
+slots:
+  topic:
+    type: text
+    mappings:
+      - type: from_text
+        entity: topic
+        intent: choose_body_ache_topic
+
 responses:
   utter_greet:
     - text: "Hey! How are you?"
@@ -50,24 +61,24 @@ responses:
 
   utter_body_aches_influence_types:
     - text: "Which type of body aches do you want to know the causes of? (Sciatica, Round Ligament, Carpal Tunnel, Back Pain)"
-  
-  utter_body_aches_influencing_factors_sciatica:
-    - text: "Sciatica can be caused by the growing uterus, weight gain, swelling, and a shift of your center of gravity due to growing breasts and belly."
 
-  utter_body_aches_sciatica_definition:
-    - text: "Sciatica pain is pain that runs from the lower back down the back of the leg to the knee or foot."
+  # utter_body_aches_influencing_factors_sciatica:
+  #   - text: "Sciatica can be caused by the growing uterus, weight gain, swelling, and a shift of your center of gravity due to growing breasts and belly."
 
-  utter_body_aches_round_ligament_definition:
-    - text: "Round ligament pain is usually felt in the lower belly and groin. "
+  # utter_body_aches_sciatica_definition:
+  #   - text: "Sciatica pain is pain that runs from the lower back down the back of the leg to the knee or foot."
 
-  utter_body_aches_carpal_tunnel_definition:
-    - text: "Carpal tunnel is a numbness, tingling, or pain felt in the wrist, hands, and/or fingers. "
+  # utter_body_aches_round_ligament_definition:
+  #   - text: "Round ligament pain is usually felt in the lower belly and groin. "
 
-  utter_body_aches_back_pain_definition:
-    - text: "Back pain is usually found in the upper or lower back and hips."
+  # utter_body_aches_carpal_tunnel_definition:
+  #   - text: "Carpal tunnel is a numbness, tingling, or pain felt in the wrist, hands, and/or fingers. "
 
-  utter_learn_next_steps:
-    - text: "What would you like to learn about body aches next? (Types, Influencing Factors, How to Care for them, or When to call a provider)"
+  # utter_body_aches_back_pain_definition:
+  #   - text: "Back pain is usually found in the upper or lower back and hips."
+
+  # utter_learn_next_steps:
+  #   - text: "What would you like to learn about body aches next? (Types, Influencing Factors, How to Care for them, or When to call a provider)"
 
 session_config:
   session_expiration_time: 60

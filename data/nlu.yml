@@ -105,51 +105,53 @@ nlu:
       - i want to learn about body aches
       - pain
 
-  - intent: body_aches_types
-    examples: |
-      - types
-      - types of body aches
-  - intent: body_aches_influence
-    examples: |
-      - influence
-      - influencing factors
-      - factors
-      - causes
-      - why
+  # - intent: body_aches_types
+  #   examples: |
+  #     - types
+  #     - types of body aches
 
-  
+  # - intent: body_aches_influence
+  #   examples: |
+  #     - influence
+  #     - influencing factors
+  #     - factors
+  #     - causes
+  #     - why
 
   #after theyve been asked what they want to learn about body aches
   - intent: choose_body_ache_topic
     examples: |
-      - [types](topic)
-      - [influencing factors](topic)
-     #- [selfcare](topic)
-      # - [other](topic)
+      - I want to learn about [types](topic)
+      - Can you tell me more about [influence](topic)?
+      - Teach me about [types](topic) please
+      - What can you tell me about [influence](topic)?
   - regex: topic
     examples: |
-      - ^(influencing factors|types|self care|other)$
+      - sciatica|influence
 
   #- lookup: influencing factors
 
-  - intent: body_aches_sciatica_influence
-    examples: |
-      - influence of sciatica
-      - what causes sciatica
+  # - intent: body_aches_sciatica_influence
+  #   examples: |
+  #     - influence of sciatica
+  #     - what causes sciatica
 
-  - intent: body_aches_sciatica_definition
-    examples: |
-      - what is sciatica
+  # - intent: body_aches_sciatica_definition
+  #   examples: |
+  #     - what is sciatica
+  #     - sciatica
 
-  - intent: body_aches_round_ligament_definition
-    examples: |
-     - round ligament
-     - what is round ligament
+  # - intent: body_aches_round_ligament_definition
+  #   examples: |
+  #     - round ligament
+  #     - what is round ligament
 
-  - intent: body_aches_carpal_tunnel_definition
-    examples: |
-      - carpal tunnel
+  # - intent: body_aches_carpal_tunnel_definition
+  #   examples: |
+  #     - carpal tunnel
+  #     - carpal tunnel pain
 
-  - intent: body_aches_back_pain_definition
-    examples: |
-      - back pain
+  # - intent: body_aches_back_pain_definition
+  #   examples: |
+  #     - back pain
+  #     - back
