@@ -18,7 +18,8 @@ intents:
   - body_aches_back_pain_definition
   - body_aches_sciatica_influence
   - choose_body_ache_topic
-
+entities:
+  - topic
 responses:
   utter_greet:
     - text: "Hey! How are you?"

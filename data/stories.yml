@@ -38,7 +38,7 @@ stories:
       - intent: body_aches
       - action: utter_body_aches
       - intent: choose_body_ache_topic
-      - entities:
+        entities:
         - topic: types
       - action: utter_body_aches_types
 
@@ -47,7 +47,7 @@ stories:
       - intent: body_aches
       - action: utter_body_aches
       - intent: choose_body_ache_topic
-      - entities:
+        entities:
         - topic: influencing factors
       - action: utter_body_aches_influence_types
 
