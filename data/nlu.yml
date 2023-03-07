@@ -119,15 +119,38 @@ nlu:
   #     - why
 
   #after theyve been asked what they want to learn about body aches
+  - regex: types_topic
+    examples: |
+      - \btypes\b
   - intent: choose_body_ache_topic
     examples: |
-      - I want to learn about [types](topic)
-      - Can you tell me more about [influence](topic)?
-      - Teach me about [types](topic) please
-      - What can you tell me about [influence](topic)?
-  - regex: topic
+      - I want to learn about [types](types_topic)
+      - Can you tell me more about [types](types_topic)?
+      - Teach me about [types](types_topic) please
+      - What can you tell me about [types](types_topic)?
+      - [types](types_topic)
+
+  - regex: influence_topic
     examples: |
-      - sciatica|influence
+      - \binfluence\b
+  - intent: choose_body_ache_topic
+    examples: |
+      - I want to learn about [influence](influence_topic)
+      - Can you tell me more about [influence](influence_topic)?
+      - Teach me about [influence](influence_topic) please
+      - What can you tell me about [influence](influence_topic)?
+      - [influence](influence_topic)
+
+  - regex: sciatica
+    examples: |
+      - \bsciatica\b
+  - intent: choose_body_ache_type
+    examples: |
+      - I want to learn about [sciatica](sciatica)
+      - Can you tell me more about [sciatica](sciatica)?
+      - Teach me about [sciatica](sciatica) please
+      - What can you tell me about [sciatica](sciatica)?
+      - [sciatica](sciatica)
 
   #- lookup: influencing factors
 

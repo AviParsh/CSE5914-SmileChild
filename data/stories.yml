@@ -48,8 +48,12 @@ stories:
       - action: utter_body_aches
       - intent: choose_body_ache_topic
       - slot_was_set:
-          - topic: "types"
+          - types_topic: types
       - action: utter_body_aches_types
+      - intent: choose_body_ache_type
+      - slot_was_set:
+          - sciatica: sciatica
+      - action: utter_body_aches_sciatica_definition
 
   - story: body_ache_influencing_path
     steps:
@@ -57,8 +61,12 @@ stories:
       - action: utter_body_aches
       - intent: choose_body_ache_topic
       - slot_was_set:
-          - topic: "influence"
+          - influence_topic: influence
       - action: utter_body_aches_influence_types
+      - intent: choose_body_ache_type
+      - slot_was_set:
+          - sciatica: sciatica
+      - action: utter_body_aches_influencing_factors_sciatica
 
   # - story: body_ache_types_path
   #   steps:

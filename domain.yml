@@ -18,17 +18,37 @@ intents:
   - body_aches_back_pain_definition
   - body_aches_sciatica_influence
   - choose_body_ache_topic
+  - choose_body_ache_type
 
 entities:
-  - topic
+  - types_topic
+  - influence_topic
+  - sciatica
+
+# slots:
+#   topic:
+#     type: text
+#     influence_conversation: true
 
 slots:
-  topic:
+  types_topic:
     type: text
+    influence_conversation: true
     mappings:
-      - type: from_text
-        entity: topic
-        intent: choose_body_ache_topic
+      - type: from_entity
+        entity: types_topic
+  influence_topic:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: influence_topic
+  sciatica:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: sciatica
 
 responses:
   utter_greet:
@@ -59,14 +79,14 @@ responses:
   utter_body_aches_types:
     - text: "The main types of body aches are Sciatica, Round Ligament, Carpal Tunnel, and Back Pain. Which type of body aches do you want to learn about?"
 
+  utter_body_aches_sciatica_definition:
+    - text: "Sciatica pain is pain that runs from the lower back down the back of the leg to the knee or foot."
+
   utter_body_aches_influence_types:
     - text: "Which type of body aches do you want to know the causes of? (Sciatica, Round Ligament, Carpal Tunnel, Back Pain)"
 
-  # utter_body_aches_influencing_factors_sciatica:
-  #   - text: "Sciatica can be caused by the growing uterus, weight gain, swelling, and a shift of your center of gravity due to growing breasts and belly."
-
-  # utter_body_aches_sciatica_definition:
-  #   - text: "Sciatica pain is pain that runs from the lower back down the back of the leg to the knee or foot."
+  utter_body_aches_influencing_factors_sciatica:
+    - text: "Sciatica can be caused by the growing uterus, weight gain, swelling, and a shift of your center of gravity due to growing breasts and belly."
 
   # utter_body_aches_round_ligament_definition:
   #   - text: "Round ligament pain is usually felt in the lower belly and groin. "
