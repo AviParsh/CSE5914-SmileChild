@@ -42,7 +42,7 @@ stories:
   #         - topic: "types"
   #     - action: utter_body_aches_types
 
-  - story: body_ache_types_path
+  - story: body_ache_types_sciatica_path
     steps:
       - intent: body_aches
       - action: utter_body_aches
@@ -54,6 +54,19 @@ stories:
       - slot_was_set:
           - sciatica: sciatica
       - action: utter_body_aches_sciatica_definition
+
+  - story: body_ache_types_carpal_tunnel_path
+    steps:
+      - intent: body_aches
+      - action: utter_body_aches
+      - intent: choose_body_ache_topic
+      - slot_was_set:
+          - types_topic: types
+      - action: utter_body_aches_types
+      - intent: choose_body_ache_type
+      - slot_was_set:
+          - carpal_tunnel: carpal tunnel
+      - action: utter_body_aches_carpal_tunnel_definition
 
   - story: body_ache_influencing_path
     steps:

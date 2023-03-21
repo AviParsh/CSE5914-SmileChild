@@ -19,11 +19,13 @@ intents:
   - body_aches_sciatica_influence
   - choose_body_ache_topic
   - choose_body_ache_type
+  - utter_body_aches_carpal_tunnel_definition
 
 entities:
   - types_topic
   - influence_topic
   - sciatica
+  - carpal_tunnel
 
 # slots:
 #   topic:
@@ -49,6 +51,12 @@ slots:
     mappings:
       - type: from_entity
         entity: sciatica
+  carpal_tunnel:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: carpal_tunnel
 
 responses:
   utter_greet:
@@ -87,6 +95,9 @@ responses:
 
   utter_body_aches_influencing_factors_sciatica:
     - text: "Sciatica can be caused by the growing uterus, weight gain, swelling, and a shift of your center of gravity due to growing breasts and belly."
+
+  utter_body_aches_carpal_tunnel_definition:
+    - text: "Carpal tunnel is a numbness, tingling, or pain felt in the wrist, hands, and/or fingers."
 
   # utter_body_aches_round_ligament_definition:
   #   - text: "Round ligament pain is usually felt in the lower belly and groin. "

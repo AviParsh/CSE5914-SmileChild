@@ -141,6 +141,17 @@ nlu:
       - What can you tell me about [influence](influence_topic)?
       - [influence](influence_topic)
 
+  - regex: carpal_tunnel
+    examples: |
+      - \bcarpal tunnel\b
+  - intent: choose_body_ache_type
+    examples: |
+      - I want to learn about [carpal tunnel](carpal_tunnel)
+      - Can you tell me more about [carpal tunnel](carpal_tunnel)?
+      - Teach me about [carpal tunnel](carpal_tunnel) please
+      - What can you tell me about [carpal tunnel](carpal_tunnel)?
+      - [carpal tunnel](carpal_tunnel)
+
   - regex: sciatica
     examples: |
       - \bsciatica\b
