@@ -4,3 +4,5 @@
 # pip install rasa then
 # rasa train then
 # rasa shell
+
+# open a new terminal and type "rasa run actions" to start the actions server

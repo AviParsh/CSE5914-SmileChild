@@ -110,6 +110,9 @@ responses:
 
   # utter_learn_next_steps:
   #   - text: "What would you like to learn about body aches next? (Types, Influencing Factors, How to Care for them, or When to call a provider)"
+actions:
+  - action_clear_sciatica_slot
+  - action_clear_carpal_tunnel_slot
 
 session_config:
   session_expiration_time: 60
