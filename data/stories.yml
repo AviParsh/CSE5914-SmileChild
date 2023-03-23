@@ -33,15 +33,7 @@ stories:
       - intent: bot_name
       - action: utter_bot_name
 
-  # - story: body_ache_types_path
-  #   steps:
-  #     - intent: body_aches
-  #     - action: utter_body_aches
-  #     - intent: choose_body_ache_topic
-  #       entities:
-  #         - topic: "types"
-  #     - action: utter_body_aches_types
-
+  
   - story: body_ache_types_sciatica_path
     steps:
       - intent: body_aches
@@ -68,10 +60,12 @@ stories:
       - slot_was_set:
           - carpal_tunnel: carpal tunnel
       - action: utter_body_aches_carpal_tunnel_definition
-      - action: action_clear_carpal_tunnel_slot
+      - action: action_clear_carpal_tunnel_slot #could possibly combine both stories now that slots can be reset?
+
+    
 
 
-  - story: body_ache_influencing_path
+  - story: body_ache_influencing_sciatica_path
     steps:
       - intent: body_aches
       - action: utter_body_aches
@@ -83,56 +77,21 @@ stories:
       - slot_was_set:
           - sciatica: sciatica
       - action: utter_body_aches_influencing_factors_sciatica
+      - action: action_clear_sciatica_slot #could possibly combine both stories now that slots can be reset?
 
-  # - story: body_ache_types_path
-  #   steps:
-  #     #- checkpoint: check_uttered_body_aches_problems
-  #     - intent: body_aches_types
-  #     - action: utter_body_aches_types
-  #     #- checkpoint: check_uttered_body_aches_types
 
-  # - story: body_ache_types_sciatica_path
-  #   steps:
-  #     #- checkpoint: check_uttered_body_aches_types
-  #     - intent: body_aches_sciatica_definition
-  #     - action: utter_body_aches_sciatica_definition
-  #     - action: utter_learn_next_steps
-  #     #- checkpoint: check_uttered_body_ache_definition
+  - story: body_ache_influencing_carpal_tunnel_path
+    steps:
+      - intent: body_aches
+      - action: utter_body_aches
+      - intent: choose_body_ache_topic
+      - slot_was_set:
+          - influence_topic: influence
+      - action: utter_body_aches_influence_types
+      - intent: choose_body_ache_type
+      - slot_was_set:
+          - sciatica: carpal_tunnel
+      - action: utter_body_aches_influencing_factors_carpal_tunnel
+      - action: action_clear_carpal_tunnel_slot 
 
-  # - story: body_ache_types_round_ligament_path
-  #   steps:
-  #     #- checkpoint: check_body_aches_types_problems
-  #     - intent: body_aches_round_ligament_definition
-  #     - action: utter_body_aches_round_ligament_definition
-  #     - action: utter_learn_next_steps
-  #     #- checkpoint: check_gave_body_ache_definition
-
-  # - story: body_ache_types_carpal_tunnel_path
-  #   steps:
-  #    # - checkpoint: check_body_aches_types_problems
-  #     - intent: body_aches_carpal_tunnel_definition
-  #     - action: utter_body_aches_carpal_tunnel_definition
-  #     - action: utter_learn_next_steps
-
-  # # - story: body_ache_types_back_pain_path
-  # #   steps:
-  # #     - checkpoint: check_body_aches_types_problems
-  # #     - intent: body_aches_back_pain_definition
-  # #     - action: utter_body_aches_back_pain_definition
-  # #     - action: utter_learn_next_steps
-
-  # #story for if someone selects influences
-  # - story: body_ache_influence_path
-  #   steps:
-  #     - checkpoint: check_uttered_body_aches_problems
-  #     - intent: body_aches_influence
-  #     - action: utter_body_aches_influence_types
-  #     - checkpoint: check_uttered_body_aches_influence
-
-  # #user wants to know influences of sciatica
-  # - story: body_ache_influence_sciatia_path
-  #   steps:
-  #     - checkpoint: check_uttered_body_aches_influence
-  #     - intent: body_aches_sciatica_influence
-  #     - action: utter_body_aches_influencing_factors_sciatica
-  #     - action: utter_learn_next_steps
+  

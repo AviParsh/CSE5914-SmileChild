@@ -99,11 +99,13 @@ responses:
   utter_body_aches_carpal_tunnel_definition:
     - text: "Carpal tunnel is a numbness, tingling, or pain felt in the wrist, hands, and/or fingers."
 
+  utter_body_aches_influencing_factors_carpal_tunnel:
+    - text: "Carpal tunnel can be caused by pregnancy swelling that puts pressure on a nerve that runs down your forearm to your hand. Additionally, Carpal tunnel may cause pain, tingling or numbness in your thumb, index and middle finger. It can first occur when you wake up in the morning and goes away after delivery in most circumstances."
+
   # utter_body_aches_round_ligament_definition:
   #   - text: "Round ligament pain is usually felt in the lower belly and groin. "
 
-  # utter_body_aches_carpal_tunnel_definition:
-  #   - text: "Carpal tunnel is a numbness, tingling, or pain felt in the wrist, hands, and/or fingers. "
+  
 
   # utter_body_aches_back_pain_definition:
   #   - text: "Back pain is usually found in the upper or lower back and hips."
